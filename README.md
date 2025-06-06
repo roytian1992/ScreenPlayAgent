@@ -1,4 +1,4 @@
-# ScreenPlayAgent: 智能剧本一致性分析智能体
+# ScreenPlayAgent: 剧本一致性分析智能体
 
 ## 🌍 项目简介
 
