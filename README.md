@@ -39,6 +39,9 @@ ScreenPlayAgent 遵循四层模块架构设计：
 3. **工具链层**（结构提取、角色图谱、因果链、时空逻辑、一致性分析器）
 4. **模型与数据层**（LLM 模型、Embedding 检索、Prompt 管理）
 
+![系统架构图](assets/structure.png)
+
+
 系统支持通过配置文件切换使用远程 OpenAI GPT-4o 接口或本地 Qwen3 模型与 bge 向量模型，满足不同部署需求。
 
 ## ⚙️ 安装与环境配置
@@ -52,10 +55,11 @@ conda activate screenplay
 
 ### 2. 本地模型与 Embedding 准备
 
-确保你已准备以下模型文件并指定路径：
+如果需要完全本地部署，确保你已准备以下模型文件并指定路径：
 
 - 本地大模型：如 Qwen3-14B
 - 向量模型：如 bge-large-zh-v1.5
+如果不需要本地部署，可以使用默认的GPT-4O模型和OpenAi Embedding
 
 ---
 
