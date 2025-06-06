@@ -1,0 +1,13 @@
+{
+  "id": "task_planning",
+  "category": "task_planner",
+  "name": "任务规划",
+  "description": "用于规划任务执行步骤",
+  "template": "请根据以下任务数据，规划详细的执行步骤。\n\n任务数据：\n{task}\n\n请以JSON数组格式输出子任务列表，每个子任务包含以下字段：\n- id：子任务ID\n- name：子任务名称\n- description：子任务描述\n- dependencies：依赖的子任务ID列表\n- estimated_time：预估执行时间（分钟）\n\n子任务应该是具体、可执行的，并且应该覆盖完成主任务所需的所有步骤。请确保子任务之间的依赖关系合理，形成一个可行的执行计划。\n\n请确保输出是有效的JSON格式。",
+  "variables": [
+    {
+      "name": "task",
+      "description": "任务数据的JSON字符串"
+    }
+  ]
+}

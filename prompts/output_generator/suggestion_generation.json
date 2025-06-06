@@ -1,0 +1,21 @@
+{
+  "id": "suggestion_generation",
+  "category": "output_generator",
+  "name": "修改建议生成",
+  "description": "用于生成剧本叙事一致性问题的修改建议",
+  "template": "请根据以下分析结果，生成针对特定类型问题的详细修改建议。\n\n问题列表：\n{issues}\n\n剧本内容：\n{screenplay}\n\n问题类型：{issue_type}\n\n请以JSON数组格式输出修改建议，每个建议包含以下字段：\n- issue_id：对应的问题ID\n- title：建议标题\n- description：详细描述\n- specific_changes：具体修改内容，包含scene_id（需要修改的场景ID）和new_content（建议的新内容）\n- rationale：修改理由\n\n请确保输出是有效的JSON格式，建议应具体、可操作，并能有效解决对应的叙事一致性问题。",
+  "variables": [
+    {
+      "name": "issues",
+      "description": "问题列表的JSON字符串"
+    },
+    {
+      "name": "screenplay",
+      "description": "剧本内容的JSON字符串"
+    },
+    {
+      "name": "issue_type",
+      "description": "问题类型"
+    }
+  ]
+}

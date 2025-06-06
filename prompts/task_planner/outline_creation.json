@@ -1,0 +1,13 @@
+{
+  "id": "outline_creation",
+  "category": "task_planner",
+  "name": "大纲创建",
+  "description": "用于创建任务执行大纲",
+  "template": "请根据以下任务数据，创建详细的执行大纲。\n\n任务数据：\n{task}\n\n请以JSON对象格式输出大纲，包含以下字段：\n- title：大纲标题\n- objective：任务目标\n- approach：执行方法\n- sections：大纲章节列表，每个章节包含title（标题）和content（内容概要）\n- key_points：需要关注的关键点列表\n- expected_outcome：预期成果\n\n大纲应该清晰、结构化，能够指导任务的执行。请确保大纲覆盖了任务的所有重要方面，并提供了足够的细节。\n\n请确保输出是有效的JSON格式。",
+  "variables": [
+    {
+      "name": "task",
+      "description": "任务数据的JSON字符串"
+    }
+  ]
+}

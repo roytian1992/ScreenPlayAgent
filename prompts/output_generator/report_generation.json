@@ -1,0 +1,17 @@
+{
+  "id": "report_generation",
+  "category": "output_generator",
+  "name": "问题报告生成",
+  "description": "用于生成剧本叙事一致性问题报告",
+  "template": "请根据以下分析结果，生成一份详细的剧本叙事一致性问题报告。\n\n问题列表：\n{issues}\n\n剧本内容：\n{screenplay}\n\n请生成一份包含以下内容的JSON对象：\n1. summary：总体评估摘要，包括问题总数、严重程度分布和主要问题类型\n2. narrative_structure：多线叙事结构问题分析\n3. spacetime：时空逻辑一致性问题分析\n4. character：角色一致性问题分析\n5. continuity：潜在穿帮点问题分析\n6. causal：因果链与剧情推进逻辑问题分析\n7. overall_rating：总体评分（1-10分）\n8. key_recommendations：关键修改建议\n\n请确保输出是有效的JSON格式，内容详实、专业，并提供具体的问题分析和改进建议。",
+  "variables": [
+    {
+      "name": "issues",
+      "description": "问题列表的JSON字符串"
+    },
+    {
+      "name": "screenplay",
+      "description": "剧本内容的JSON字符串"
+    }
+  ]
+}

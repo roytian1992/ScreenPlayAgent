@@ -1,0 +1,13 @@
+{
+  "id": "spacetime_model_building",
+  "category": "knowledge_builder",
+  "name": "时空关系模型构建",
+  "description": "用于构建剧本中的时空关系模型",
+  "template": "请分析以下剧本，构建时间线和空间关系模型，并以JSON格式输出。\n\n剧本内容：\n{screenplay}\n\n请输出包含以下内容的JSON对象：\n1. timeline：按时间顺序排列的事件列表，每个事件包含scene_id、time（时间点或描述）和event（事件描述）\n2. locations：剧本中出现的所有地点列表，每个地点包含name（地点名称）和scenes（出现该地点的场景ID列表）\n3. character_movements：角色移动轨迹，每个角色包含name（角色名称）和movements（移动列表，每个移动包含from_scene、to_scene、from_location和to_location）\n\n请确保输出是有效的JSON格式，只包含在剧本中明确提及或可以合理推断的时空关系。",
+  "variables": [
+    {
+      "name": "screenplay",
+      "description": "剧本内容的JSON字符串"
+    }
+  ]
+}

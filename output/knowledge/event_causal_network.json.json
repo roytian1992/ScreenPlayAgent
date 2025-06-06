@@ -1,0 +1,154 @@
+{
+  "events": [
+    {
+      "id": "event_1",
+      "scene_id": 1,
+      "description": "李明从噩梦中惊醒，发现自己在一个陌生的公寓里。门铃响起，张华自称是他的朋友，称他们昨晚一起喝过酒。",
+      "characters": [
+        "李明",
+        "张华"
+      ]
+    },
+    {
+      "id": "event_2",
+      "scene_id": 2,
+      "description": "李明和张华在街上寻找线索，来到李明常去的咖啡店，老板提到李明昨天下午带着一个金发女子来过。",
+      "characters": [
+        "李明",
+        "张华",
+        "咖啡店老板"
+      ]
+    },
+    {
+      "id": "event_3",
+      "scene_id": 3,
+      "description": "李明和张华来到公司，王秘书表示李明请了一周假，赵总监警告李明公司有内鬼。",
+      "characters": [
+        "李明",
+        "张华",
+        "王秘书",
+        "赵总监"
+      ]
+    },
+    {
+      "id": "event_4",
+      "scene_id": 4,
+      "description": "李明在公园遇到金发女子林小雨，她交给李明一个U盘，称里面有证据。随后林小雨被枪击倒地。",
+      "characters": [
+        "李明",
+        "林小雨"
+      ]
+    },
+    {
+      "id": "event_5",
+      "scene_id": 5,
+      "description": "李明在医院等待林小雨的手术结果，林小雨在手术中被带走。",
+      "characters": [
+        "李明",
+        "张华",
+        "医生",
+        "警探陈"
+      ]
+    },
+    {
+      "id": "event_6",
+      "scene_id": 6,
+      "description": "三人回到李明的公寓，李明发现日记，记录了他调查公司贪污的秘密行动。警探陈得知林小雨是国际刑警。",
+      "characters": [
+        "李明",
+        "张华",
+        "警探陈"
+      ]
+    },
+    {
+      "id": "event_7",
+      "scene_id": 7,
+      "description": "李明根据日记线索前往废弃工厂，发现林小雨被绑架，张华和赵总监正在交易机密文件。",
+      "characters": [
+        "李明",
+        "张华",
+        "林小雨",
+        "赵总监"
+      ]
+    },
+    {
+      "id": "event_8",
+      "scene_id": 8,
+      "description": "李明恢复记忆，揭露自己故意装失忆。警探陈带队逮捕张华和赵总监，林小雨挣脱绳索。",
+      "characters": [
+        "李明",
+        "张华",
+        "林小雨",
+        "赵总监",
+        "警探陈"
+      ]
+    },
+    {
+      "id": "event_9",
+      "scene_id": 9,
+      "description": "在警局，李明和林小雨的身份被揭露，他们实际上是卧底警察。张华招认罪行。",
+      "characters": [
+        "李明",
+        "林小雨",
+        "警探陈",
+        "警局局长"
+      ]
+    },
+    {
+      "id": "event_10",
+      "scene_id": 10,
+      "description": "李明和林小雨在海边别墅休整，回顾经历，林小雨调侃李明的演技。",
+      "characters": [
+        "李明",
+        "林小雨"
+      ]
+    }
+  ],
+  "causal_links": [
+    {
+      "source": "event_1",
+      "target": "event_2",
+      "description": "李明的失忆状态促使他和张华寻找线索。"
+    },
+    {
+      "source": "event_2",
+      "target": "event_3",
+      "description": "咖啡店老板提到李明昨天下午与金发女子的互动，引发李明和张华前往公司调查。"
+    },
+    {
+      "source": "event_3",
+      "target": "event_4",
+      "description": "赵总监提到公司有内鬼，促使李明独自寻找线索，最终在公园遇到林小雨。"
+    },
+    {
+      "source": "event_4",
+      "target": "event_5",
+      "description": "林小雨被枪击倒地，导致李明前往医院等待手术结果。"
+    },
+    {
+      "source": "event_5",
+      "target": "event_6",
+      "description": "林小雨在手术中被带走，促使三人回到李明的公寓继续调查。"
+    },
+    {
+      "source": "event_6",
+      "target": "event_7",
+      "description": "李明发现日记，揭示公司贪污线索，促使他前往废弃工厂调查。"
+    },
+    {
+      "source": "event_7",
+      "target": "event_8",
+      "description": "李明在工厂发现张华和赵总监的交易，导致他恢复记忆并揭露真相。"
+    },
+    {
+      "source": "event_8",
+      "target": "event_9",
+      "description": "警探陈逮捕张华和赵总监，导致警局内真相大白。"
+    },
+    {
+      "source": "event_9",
+      "target": "event_10",
+      "description": "任务结束后，李明和林小雨在海边别墅休整，回顾经历。"
+    }
+  ]
+}

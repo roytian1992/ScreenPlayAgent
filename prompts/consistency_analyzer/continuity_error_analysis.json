@@ -1,0 +1,17 @@
+{
+  "id": "continuity_error_analysis",
+  "category": "consistency_analyzer",
+  "name": "潜在穿帮点分析",
+  "description": "用于分析剧本中的潜在穿帮点问题",
+  "template": "请分析以下剧本的潜在穿帮点，检测可能存在的问题，如道具一致性、服装与妆容、伤痕与身体状态、环境细节等。\n\n剧本内容：\n{screenplay}\n\n已构建的知识：\n{knowledge}\n\n请以JSON数组格式输出发现的问题，每个问题包含以下字段：\n- severity：严重程度，可选值为\"high\"（高）、\"medium\"（中）、\"low\"（低）\n- problem_type：问题类型，如\"道具一致性\"、\"服装与妆容\"、\"伤痕与身体状态\"、\"环境细节\"等\n- description：问题描述\n- location：问题位置，包含scene_ids（相关场景ID列表）\n- suggestion：修改建议\n\n请确保输出是有效的JSON格式，只包含在剧本中确实存在的问题。",
+  "variables": [
+    {
+      "name": "screenplay",
+      "description": "剧本内容的JSON字符串"
+    },
+    {
+      "name": "knowledge",
+      "description": "已构建的知识的JSON字符串"
+    }
+  ]
+}

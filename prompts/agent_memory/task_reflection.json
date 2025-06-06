@@ -1,0 +1,17 @@
+{
+  "id": "task_reflection",
+  "category": "agent_memory",
+  "name": "任务反思",
+  "description": "用于反思任务执行情况",
+  "template": "请反思以下任务的执行情况，并结合已有经验提出改进建议。\n\n任务数据：\n{task}\n\n已有经验：\n{experience}\n\n请以JSON对象格式输出反思结果，包含以下字段：\n- strengths：执行优势，列出任务执行中的成功之处\n- weaknesses：执行劣势，列出任务执行中的不足之处\n- lessons：经验教训，总结从任务执行中学到的经验\n- improvements：改进建议，提出具体的改进措施\n\n请确保输出是有效的JSON格式，反思应具体、深入，并能指导未来的任务执行。",
+  "variables": [
+    {
+      "name": "task",
+      "description": "任务数据的JSON字符串"
+    },
+    {
+      "name": "experience",
+      "description": "已有经验的JSON字符串"
+    }
+  ]
+}

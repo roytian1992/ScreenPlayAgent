@@ -1,0 +1,21 @@
+{
+  "id": "experience_summary",
+  "category": "agent_memory",
+  "name": "经验总结",
+  "description": "用于总结Agent的经验",
+  "template": "请根据以下任务历史和检索历史，总结Agent的经验。\n\n任务历史：\n{task_history}\n\n检索历史：\n{retrieval_history}\n\n当前经验：\n{current_experience}\n\n请以JSON对象格式输出经验总结，键为经验类别（如\\\"检索策略\\\"、\\\"任务拆分\\\"、\\\"问题检测\\\"等），值为具体经验描述。例如：\n{{\n  \\\"检索策略\\\": \\\"针对角色一致性问题，使用角色名称+行为模式作为检索关键词效果最佳\\\",\n  \\\"任务拆分\\\": \\\"先分析角色关系，再检查时空逻辑，最后验证因果链的策略能有效减少漏检率\\\"\n}}\n\n请确保输出是有效的JSON格式，经验应具体、可操作，并能指导未来的任务执行。",
+  "variables": [
+    {
+      "name": "task_history",
+      "description": "任务历史的JSON字符串"
+    },
+    {
+      "name": "retrieval_history",
+      "description": "检索历史的JSON字符串"
+    },
+    {
+      "name": "current_experience",
+      "description": "当前经验的JSON字符串"
+    }
+  ]
+}

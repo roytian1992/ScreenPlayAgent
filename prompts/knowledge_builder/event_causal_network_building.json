@@ -1,0 +1,13 @@
+{
+  "id": "event_causal_network_building",
+  "category": "knowledge_builder",
+  "name": "事件因果网络构建",
+  "description": "用于构建剧本中的事件因果网络",
+  "template": "请分析以下剧本，构建事件因果网络，并以JSON格式输出。\n\n剧本内容：\n{screenplay}\n\n请输出包含以下内容的JSON对象：\n1. events：剧本中的关键事件列表，每个事件包含id、scene_id、description（事件描述）和characters（涉及的角色列表）\n2. causal_links：事件之间的因果关系列表，每个因果关系包含source（原因事件ID）、target（结果事件ID）和description（因果关系描述）\n\n请确保输出是有效的JSON格式，只包含在剧本中明确提及或可以合理推断的事件和因果关系。",
+  "variables": [
+    {
+      "name": "screenplay",
+      "description": "剧本内容的JSON字符串"
+    }
+  ]
+}

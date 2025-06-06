@@ -1,0 +1,21 @@
+{
+  "id": "strategy_optimization",
+  "category": "agent_memory",
+  "name": "策略优化",
+  "description": "用于优化任务执行策略",
+  "template": "请根据以下任务历史和已有经验，优化特定类型任务的执行策略。\n\n任务类型：{task_type}\n\n任务历史：\n{task_history}\n\n已有经验：\n{experience}\n\n请以JSON对象格式输出优化策略，包含以下字段：\n- task_type：任务类型\n- current_strategy：当前策略描述\n- optimized_strategy：优化后的策略描述\n- key_improvements：关键改进点列表\n- expected_benefits：预期收益\n\n请确保输出是有效的JSON格式，优化策略应具体、可操作，并能提高任务执行效率和质量。",
+  "variables": [
+    {
+      "name": "task_type",
+      "description": "任务类型"
+    },
+    {
+      "name": "task_history",
+      "description": "任务历史的JSON字符串"
+    },
+    {
+      "name": "experience",
+      "description": "已有经验的JSON字符串"
+    }
+  ]
+}

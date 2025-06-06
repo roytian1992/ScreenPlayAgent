@@ -1,0 +1,39 @@
+{
+  "llm": {
+    "model_type": "local",
+    "model_name": "qwen3",
+    "device": "cuda",
+    "model_path": "/home/RoyTian/roytian/Qwen3/Qwen3-14B",
+    "temperature": 0.2,
+    "max_tokens": 2048
+  },
+  "templates_dir": "prompts",
+  "output_dir": "output/reports",
+  "output_format": "json",
+  "text_processor": {
+    "max_chunk_size": 4000,
+    "chunk_overlap": 500,
+    "use_global_summary": true,
+    "max_summary_size": 1000
+  },
+  "agent_memory": {
+    "location": "output/saved_memory",
+    "memory_file": "memory.json",
+    "max_task_history": 100,
+    "max_retrieval_history": 500
+  },
+  "agent_rag": {
+    "embedding_type": "bge",
+    "index_file": "index.json",
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "device": "cuda",
+    "embedding_model": "/home/RoyTian/roytian/Embeddings/bge-large-zh-v1.5"
+  },
+  "input_processor": {},
+  "knowledge_builder": {
+    "location": "output/knowledge"
+  },
+  "consistency_analyzer": {},
+  "output_generator": {}
+}

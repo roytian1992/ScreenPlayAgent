@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "id": "张华",
+      "name": "张华"
+    },
+    {
+      "id": "王秘书",
+      "name": "王秘书"
+    },
+    {
+      "id": "警探陈",
+      "name": "警探陈"
+    },
+    {
+      "id": "李明",
+      "name": "李明"
+    },
+    {
+      "id": "咖啡店老板",
+      "name": "咖啡店老板"
+    },
+    {
+      "id": "赵总监",
+      "name": "赵总监"
+    },
+    {
+      "id": "警局局长",
+      "name": "警局局长"
+    },
+    {
+      "id": "医生",
+      "name": "医生"
+    },
+    {
+      "id": "林小雨",
+      "name": "林小雨"
+    },
+    {
+      "id": "国际刑警",
+      "name": "国际刑警"
+    }
+  ],
+  "edges": [
+    {
+      "source": "张华",
+      "target": "李明",
+      "relation": "内鬼"
+    },
+    {
+      "source": "张华",
+      "target": "赵总监",
+      "relation": "共犯"
+    },
+    {
+      "source": "张华",
+      "target": "警探陈",
+      "relation": "逮捕者"
+    },
+    {
+      "source": "张华",
+      "target": "警局局长",
+      "relation": "执法对象"
+    },
+    {
+      "source": "王秘书",
+      "target": "李明",
+      "relation": "同事"
+    },
+    {
+      "source": "警探陈",
+      "target": "李明",
+      "relation": "调查合作"
+    },
+    {
+      "source": "警探陈",
+      "target": "林小雨",
+      "relation": "调查合作"
+    },
+    {
+      "source": "警探陈",
+      "target": "赵总监",
+      "relation": "逮捕者"
+    },
+    {
+      "source": "李明",
+      "target": "林小雨",
+      "relation": "卧底搭档"
+    },
+    {
+      "source": "李明",
+      "target": "赵总监",
+      "relation": "公司高层"
+    },
+    {
+      "source": "李明",
+      "target": "咖啡店老板",
+      "relation": "常客"
+    },
+    {
+      "source": "李明",
+      "target": "警局局长",
+      "relation": "上级"
+    },
+    {
+      "source": "赵总监",
+      "target": "警局局长",
+      "relation": "执法对象"
+    },
+    {
+      "source": "警局局长",
+      "target": "林小雨",
+      "relation": "上级"
+    },
+    {
+      "source": "林小雨",
+      "target": "国际刑警",
+      "relation": "身份"
+    }
+  ]
+}

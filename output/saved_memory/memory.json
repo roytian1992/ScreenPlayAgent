@@ -1,0 +1,223 @@
+{
+  "task_history": [
+    {
+      "timestamp": "2025-06-05T14:54:24.150407",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "test_data/sample_screenplay.json",
+        "output_path": "sample_output.json",
+        "timestamp": "2025-06-05T14:54:24.150399",
+        "status": "completed",
+        "result": {
+          "issue_count": 5,
+          "report_generated": true
+        },
+        "updated_at": "2025-06-05T14:57:54.979115"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T15:23:23.775117",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T15:23:23.775110",
+        "status": "failed",
+        "result": {
+          "error": "'dict' object has no attribute 'startswith'"
+        },
+        "updated_at": "2025-06-05T15:23:30.453173"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T15:27:16.460595",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T15:27:16.460587",
+        "status": "completed",
+        "result": {
+          "issue_count": 5,
+          "report_generated": true
+        },
+        "updated_at": "2025-06-05T15:30:46.747658"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T15:33:19.061081",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T15:33:19.061073",
+        "status": "completed",
+        "result": {
+          "issue_count": 5,
+          "report_generated": true
+        },
+        "updated_at": "2025-06-05T15:37:12.601942"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T17:35:56.112308",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "./test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T17:35:56.112299",
+        "status": "failed",
+        "result": {
+          "error": "2 validation errors for LLMChain\nllm.is-instance[Runnable]\n  Input should be an instance of Runnable [type=is_instance_of, input_value=<src.models.llm_interface...bject at 0x7f7ad120cad0>, input_type=UnifiedLLMInterface]\n    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of\nllm.is-instance[Runnable]\n  Input should be an instance of Runnable [type=is_instance_of, input_value=<src.models.llm_interface...bject at 0x7f7ad120cad0>, input_type=UnifiedLLMInterface]\n    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of"
+        },
+        "updated_at": "2025-06-05T17:35:56.113714"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T17:42:42.462907",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "./test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T17:42:42.462896",
+        "status": "failed",
+        "result": {
+          "error": "'RunnableSequence' object has no attribute 'run'"
+        },
+        "updated_at": "2025-06-05T17:42:42.464940"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T17:44:39.100398",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "./test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T17:44:39.100386",
+        "status": "failed",
+        "result": {
+          "error": "2 validation errors for LLMChain\nllm.is-instance[Runnable]\n  Input should be an instance of Runnable [type=is_instance_of, input_value=<src.models.llm_interface...bject at 0x7fd027708890>, input_type=UnifiedLLMInterface]\n    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of\nllm.is-instance[Runnable]\n  Input should be an instance of Runnable [type=is_instance_of, input_value=<src.models.llm_interface...bject at 0x7fd027708890>, input_type=UnifiedLLMInterface]\n    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of"
+        },
+        "updated_at": "2025-06-05T17:48:28.536470"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T17:50:14.795314",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "./test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T17:50:14.795304",
+        "status": "failed",
+        "result": {
+          "error": "Expected a Runnable, callable or dict.Instead got an unsupported type: <class 'src.models.llm_interface.UnifiedLLMInterface'>"
+        },
+        "updated_at": "2025-06-05T17:50:14.796213"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T17:51:07.975529",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "./test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T17:51:07.975513",
+        "status": "failed",
+        "result": {
+          "error": "2 validation errors for LLMChain\nllm.is-instance[Runnable]\n  Input should be an instance of Runnable [type=is_instance_of, input_value=<src.models.llm_interface...bject at 0x7f7a9b078c80>, input_type=UnifiedLLMInterface]\n    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of\nllm.is-instance[Runnable]\n  Input should be an instance of Runnable [type=is_instance_of, input_value=<src.models.llm_interface...bject at 0x7f7a9b078c80>, input_type=UnifiedLLMInterface]\n    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of"
+        },
+        "updated_at": "2025-06-05T17:51:07.977545"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T21:05:24.178538",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "./test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T21:05:24.178524"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T21:07:00.181317",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "./test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T21:07:00.181304",
+        "status": "failed",
+        "result": {
+          "error": "'dict' object has no attribute 'startswith'"
+        },
+        "updated_at": "2025-06-05T21:08:17.901364"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T21:09:15.116977",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "./test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T21:09:15.116963",
+        "status": "completed",
+        "result": {
+          "issue_count": 8,
+          "report_generated": true
+        },
+        "updated_at": "2025-06-05T21:21:54.488767"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T21:28:39.031147",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "./test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T21:28:39.031133"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T21:29:45.062374",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "./test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T21:29:45.062360"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T21:33:55.359708",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "./test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T21:33:55.359695"
+      }
+    },
+    {
+      "timestamp": "2025-06-05T21:35:52.843576",
+      "task": {
+        "type": "analyze_screenplay",
+        "input_path": "./test_data/sample_screenplay.json",
+        "output_path": null,
+        "timestamp": "2025-06-05T21:35:52.843564",
+        "status": "completed",
+        "result": {
+          "issue_count": 8,
+          "report_generated": true
+        },
+        "updated_at": "2025-06-05T21:50:10.220438"
+      }
+    }
+  ],
+  "retrieval_history": [],
+  "experience": {
+    "任务分析": "在分析剧本时，应重点关注问题数量和报告生成状态，以评估任务完成情况。确保在任务执行前明确这些指标，以便在任务完成后进行有效评估。",
+    "问题检测": "通过分析剧本中的问题数量，可以有效评估剧本的质量和潜在改进点。建议在分析过程中使用自动化工具识别常见问题，以提高检测效率。",
+    "结果生成": "生成详细的报告有助于总结分析结果，并为后续的剧本修改提供指导。确保报告包含具体问题描述和建议改进措施，以便剧本作者能够快速采取行动。",
+    "时间管理": "任务从开始到完成的时间记录有助于评估任务效率和优化流程。建议在任务执行过程中记录关键时间节点，以便后续分析和优化。",
+    "任务状态跟踪": "使用任务状态（如'completed'或'failed'）来标识任务的完成情况，确保任务流程的透明性和可追溯性。建议在任务执行过程中定期更新状态，以便及时发现和解决潜在问题。",
+    "错误处理": "在任务失败时，记录详细的错误信息（如'dict' object has no attribute 'startswith'）有助于快速定位问题并进行修复。建议在任务执行前进行输入数据的验证，以减少因数据格式问题导致的错误。",
+    "LLM接口适配": "确保LLM接口符合Runnable规范，避免因接口类型不匹配导致的验证错误。在使用自定义LLM接口时，应进行兼容性测试，确保其能被任务流程正确识别和调用。"
+  }
+}

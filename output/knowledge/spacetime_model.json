@@ -1,0 +1,301 @@
+{
+  "timeline": [
+    {
+      "scene_id": 1,
+      "time": "早晨",
+      "event": "李明从噩梦中惊醒，发现自己在一个陌生的公寓里。张华来访，称他们昨晚一起喝过酒。"
+    },
+    {
+      "scene_id": 2,
+      "time": "上午",
+      "event": "李明和张华在城市街道上寻找线索，来到李明常去的咖啡店，老板提到李明昨天下午曾带着金发女子来过。"
+    },
+    {
+      "scene_id": 3,
+      "time": "中午",
+      "event": "李明和张华来到科技公司办公室，王秘书表示李明请了一周假，赵总监透露资料已备份，但公司有内鬼。"
+    },
+    {
+      "scene_id": 4,
+      "time": "下午",
+      "event": "李明独自在公园遇到金发女子林小雨，她交给李明一个U盘，随后被枪击倒地。"
+    },
+    {
+      "scene_id": 5,
+      "time": "傍晚",
+      "event": "李明在医院等待林小雨的手术结果，张华和警探陈赶到，林小雨在手术中被带走。"
+    },
+    {
+      "scene_id": 6,
+      "time": "晚上",
+      "event": "三人回到李明的公寓，发现床下的日记，警探陈透露林小雨是国际刑警。"
+    },
+    {
+      "scene_id": 7,
+      "time": "深夜",
+      "event": "李明前往废弃工厂，发现林小雨被绑架，张华和赵总监正在交易机密文件。"
+    },
+    {
+      "scene_id": 8,
+      "time": "凌晨",
+      "event": "李明恢复记忆，警探陈带队逮捕张华和赵总监，林小雨挣脱绳索，揭露枪击案是戏码。"
+    },
+    {
+      "scene_id": 9,
+      "time": "次日早晨",
+      "event": "在警局，李明和林小雨的身份被揭露，张华认罪，警局局长表扬他们的行动。"
+    },
+    {
+      "scene_id": 10,
+      "time": "中午",
+      "event": "李明和林小雨在海边别墅休整，回顾经历，计划新的任务。"
+    }
+  ],
+  "locations": [
+    {
+      "name": "城市公寓",
+      "scenes": [
+        1
+      ]
+    },
+    {
+      "name": "城市街道",
+      "scenes": [
+        2
+      ]
+    },
+    {
+      "name": "咖啡店",
+      "scenes": [
+        2
+      ]
+    },
+    {
+      "name": "科技公司办公室",
+      "scenes": [
+        3
+      ]
+    },
+    {
+      "name": "公园",
+      "scenes": [
+        4
+      ]
+    },
+    {
+      "name": "市立医院",
+      "scenes": [
+        5
+      ]
+    },
+    {
+      "name": "李明的公寓",
+      "scenes": [
+        6
+      ]
+    },
+    {
+      "name": "废弃工厂",
+      "scenes": [
+        7,
+        8
+      ]
+    },
+    {
+      "name": "警察局",
+      "scenes": [
+        9
+      ]
+    },
+    {
+      "name": "海边别墅",
+      "scenes": [
+        10
+      ]
+    }
+  ],
+  "character_movements": [
+    {
+      "name": "李明",
+      "movements": [
+        {
+          "from_scene": 1,
+          "to_scene": 2,
+          "from_location": "城市公寓",
+          "to_location": "城市街道"
+        },
+        {
+          "from_scene": 2,
+          "to_scene": 3,
+          "from_location": "城市街道",
+          "to_location": "科技公司办公室"
+        },
+        {
+          "from_scene": 3,
+          "to_scene": 4,
+          "from_location": "科技公司办公室",
+          "to_location": "公园"
+        },
+        {
+          "from_scene": 4,
+          "to_scene": 5,
+          "from_location": "公园",
+          "to_location": "市立医院"
+        },
+        {
+          "from_scene": 5,
+          "to_scene": 6,
+          "from_location": "市立医院",
+          "to_location": "李明的公寓"
+        },
+        {
+          "from_scene": 6,
+          "to_scene": 7,
+          "from_location": "李明的公寓",
+          "to_location": "废弃工厂"
+        },
+        {
+          "from_scene": 7,
+          "to_scene": 8,
+          "from_location": "废弃工厂",
+          "to_location": "废弃工厂"
+        },
+        {
+          "from_scene": 8,
+          "to_scene": 9,
+          "from_location": "废弃工厂",
+          "to_location": "警察局"
+        },
+        {
+          "from_scene": 9,
+          "to_scene": 10,
+          "from_location": "警察局",
+          "to_location": "海边别墅"
+        }
+      ]
+    },
+    {
+      "name": "张华",
+      "movements": [
+        {
+          "from_scene": 1,
+          "to_scene": 2,
+          "from_location": "城市公寓",
+          "to_location": "城市街道"
+        },
+        {
+          "from_scene": 2,
+          "to_scene": 3,
+          "from_location": "城市街道",
+          "to_location": "科技公司办公室"
+        },
+        {
+          "from_scene": 3,
+          "to_scene": 5,
+          "from_location": "科技公司办公室",
+          "to_location": "市立医院"
+        },
+        {
+          "from_scene": 5,
+          "to_scene": 6,
+          "from_location": "市立医院",
+          "to_location": "李明的公寓"
+        },
+        {
+          "from_scene": 6,
+          "to_scene": 7,
+          "from_location": "李明的公寓",
+          "to_location": "废弃工厂"
+        },
+        {
+          "from_scene": 7,
+          "to_scene": 8,
+          "from_location": "废弃工厂",
+          "to_location": "废弃工厂"
+        },
+        {
+          "from_scene": 8,
+          "to_scene": 9,
+          "from_location": "废弃工厂",
+          "to_location": "警察局"
+        },
+        {
+          "from_scene": 9,
+          "to_scene": 10,
+          "from_location": "警察局",
+          "to_location": "海边别墅"
+        }
+      ]
+    },
+    {
+      "name": "林小雨",
+      "movements": [
+        {
+          "from_scene": 4,
+          "to_scene": 5,
+          "from_location": "公园",
+          "to_location": "市立医院"
+        },
+        {
+          "from_scene": 5,
+          "to_scene": 7,
+          "from_location": "市立医院",
+          "to_location": "废弃工厂"
+        },
+        {
+          "from_scene": 7,
+          "to_scene": 8,
+          "from_location": "废弃工厂",
+          "to_location": "废弃工厂"
+        },
+        {
+          "from_scene": 8,
+          "to_scene": 9,
+          "from_location": "废弃工厂",
+          "to_location": "警察局"
+        },
+        {
+          "from_scene": 9,
+          "to_scene": 10,
+          "from_location": "警察局",
+          "to_location": "海边别墅"
+        }
+      ]
+    },
+    {
+      "name": "警探陈",
+      "movements": [
+        {
+          "from_scene": 5,
+          "to_scene": 6,
+          "from_location": "市立医院",
+          "to_location": "李明的公寓"
+        },
+        {
+          "from_scene": 6,
+          "to_scene": 7,
+          "from_location": "李明的公寓",
+          "to_location": "废弃工厂"
+        },
+        {
+          "from_scene": 7,
+          "to_scene": 8,
+          "from_location": "废弃工厂",
+          "to_location": "废弃工厂"
+        },
+        {
+          "from_scene": 8,
+          "to_scene": 9,
+          "from_location": "废弃工厂",
+          "to_location": "警察局"
+        },
+        {
+          "from_scene": 9,
+          "to_scene": 10,
+          "from_location": "警察局",
+          "to_location": "海边别墅"
+        }
+      ]
+    }
+  ]
+}

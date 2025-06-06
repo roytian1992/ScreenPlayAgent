@@ -1,0 +1,13 @@
+{
+  "id": "conflict_detection",
+  "category": "error_corrector",
+  "name": "冲突检测",
+  "description": "用于检测冲突的问题",
+  "template": "请分析以下问题列表，检测其中可能存在的冲突问题。\n\n问题列表：\n{issues}\n\n请以JSON数组格式输出冲突组，每个冲突组包含以下字段：\n- conflict_type：冲突类型，如\"矛盾建议\"、\"互斥问题\"等\n- issue_ids：冲突的问题ID列表\n- description：冲突描述\n\n冲突是指两个或多个问题之间存在矛盾或互斥，例如一个问题建议增加某个情节，而另一个问题建议删除该情节；或者一个问题指出某个角色行为不一致，而另一个问题认为该行为是合理的。\n\n请确保输出是有效的JSON格式，只包含确实存在冲突的问题组。",
+  "variables": [
+    {
+      "name": "issues",
+      "description": "问题列表的JSON字符串"
+    }
+  ]
+}

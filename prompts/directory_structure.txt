@@ -1,0 +1,27 @@
+"""
+提示模板目录结构示例
+用于剧本叙事一致性校对智能体的提示模板
+"""
+
+prompts/
+  ├── knowledge_builder/
+  │   ├── character_graph_building.json
+  │   ├── spacetime_model_building.json
+  │   └── event_causal_network_building.json
+  ├── consistency_analyzer/
+  │   ├── narrative_structure_analysis.json
+  │   ├── spacetime_consistency_analysis.json
+  │   ├── character_consistency_analysis.json
+  │   ├── continuity_error_analysis.json
+  │   └── causal_logic_analysis.json
+  ├── output_generator/
+  │   ├── report_generation.json
+  │   └── suggestion_generation.json
+  ├── error_corrector/
+  │   ├── duplicate_detection.json
+  │   └── conflict_detection.json
+  ├── agent_memory/
+  │   ├── experience_summary.json
+  │   └── task_reflection.json
+  └── agent/
+      └── agent_prompt.json

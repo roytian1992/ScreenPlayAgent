@@ -1,0 +1,13 @@
+{
+  "id": "duplicate_detection",
+  "category": "error_corrector",
+  "name": "重复检测",
+  "description": "用于检测重复的问题",
+  "template": "请分析以下问题列表，检测其中可能存在的重复问题。\n\n问题列表：\n{issues}\n\n请返回重复问题的ID列表，格式为JSON数组。如果两个或多个问题描述相同或非常相似、指向相同的场景和问题，则认为它们是重复的。在这种情况下，只保留其中一个问题（通常是描述更详细的那个），将其他问题的ID添加到返回的数组中。\n\n请确保输出是有效的JSON格式，只包含确实重复的问题ID。",
+  "variables": [
+    {
+      "name": "issues",
+      "description": "问题列表的JSON字符串"
+    }
+  ]
+}

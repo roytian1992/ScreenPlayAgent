@@ -1,0 +1,13 @@
+{
+  "id": "character_graph_building",
+  "category": "knowledge_builder",
+  "name": "角色图谱构建",
+  "description": "用于构建剧本中的角色关系图谱",
+  "template": "请分析以下剧本，提取所有角色之间的关系，并以JSON格式输出。\n\n剧本内容：\n{screenplay}\n\n请以JSON数组格式输出角色关系，每个关系包含source（源角色）、target（目标角色）和relation（关系描述）字段。例如：\n[\n  {{\"source\": \"张三\", \"target\": \"李四\", \"relation\": \"朋友\"}},\n  {{\"source\": \"张三\", \"target\": \"王五\", \"relation\": \"敌人\"}}\n]\n\n请确保输出是有效的JSON格式，只包含在剧本中明确提及或可以合理推断的角色关系。",
+  "variables": [
+    {
+      "name": "screenplay",
+      "description": "剧本内容的JSON字符串"
+    }
+  ]
+}
