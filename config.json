@@ -1,0 +1,34 @@
+{
+  "llm": {
+    "model_type": "openai",
+    "model_name": "gpt-4o",
+    "api_key": "your_openai_api_key_here",
+    "temperature": 0.2
+  },
+  "templates_dir": "prompts",
+  "output_dir": "output/reports",
+  "output_format": "json",
+  "text_processor": {
+    "max_chunk_size": 4000,
+    "chunk_overlap": 500,
+    "use_global_summary": true,
+    "max_summary_size": 1000
+  },
+  "agent_memory": {
+    "location": "output/saved_memory",
+    "memory_file": "memory.json",
+    "max_task_history": 100,
+    "max_retrieval_history": 500
+  },
+  "agent_rag": {
+    "index_file": "index.json",
+    "chunk_size": 1000,
+    "chunk_overlap": 200
+  },
+  "input_processor": {},
+  "knowledge_builder": {
+    "location": "output/knowledge"
+  },
+  "consistency_analyzer": {},
+  "output_generator": {}
+}
